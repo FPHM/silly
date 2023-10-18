@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+</head>
+<body>
+<div class="row">
+    <div class="col-sm-6">
+        <div id="battle">
+            <p id="enemyName">Enemy: Hilichurl</p>
+            <p id="enemyLvl">Lvl 1</p>
+            <div id="health" class="healthBG">
+                <p id="health2" class="health">&nbsp;</p>
+            </div>
+            <div id="time" class="timeBG">
+                <p id="time2" class="time">&nbsp;</p>
+            </div>
+            <p style="text-align: center">Your health:</p>
+            <div id="healthP" class="healthBG">
+                <p id="healthP2" class="health">&nbsp;</p>
+            </div>
+            <div id="contextActions">
+                <button id="kill" class="btn btn-primary disabled" onclick="kill()">attack</button>
+                <button id="block" class="btn btn-info disabled" onclick="block()">block</button>
+                <button id="combat" class="btn btn-danger" onclick="toggleCombat()">Combat: Off</button>
+                <button id="revive" class="btn btn-default" onclick="revive()" style="display: none">Revive</button>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6">
+        <div id="resources">
+            <p id="gold"><img alt="gold" src="https://pseudonian.github.io/SynergismOfficial/Pictures/Coin.png">: 0</p>
+            <p id="hp">Max HP: 100</p>
+            <p id="atk">Base Attack: 20</p>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <h1 style="text-align: center">Upgrades:</h1>
+</div>
+<div id="upgrades" class="row">
+    <h3>Basic Upgrades</h3>
+    <div style="height: 175px">
+        <div class="col-sm-4 bordered">
+            <p>Upgrade Weapon</p>
+            <p>Base Atk:</p>
+            <p id="bAtkIncrease">20 => 40</p>
+            <button id="weaponBuy" class="btn btn-danger" onclick="weaponBuy()">Cost: <img alt="gold" src="https://pseudonian.github.io/SynergismOfficial/Pictures/Coin.png"> 5</button>
+        </div>
+        <div class="col-sm-4 bordered">
+            <p>Upgrade Skin (lol)</p>
+            <p>Base HP:</p>
+            <p id="bHPIncrease">100 => 200</p>
+            <button id="HPBuy" class="btn btn-danger" onclick="HPBuy()">Cost: <img alt="gold" src="https://pseudonian.github.io/SynergismOfficial/Pictures/Coin.png"> 10</button>
+        </div>
+        <div class="col-sm-4 bordered">
+            <p>Upgrade Shield</p>
+            <p>Dmg Reduction of Blocks:</p>
+            <p id="shieldIncrease">30% => 40%</p>
+            <button id="shieldBuy" class="btn btn-danger" onclick="shieldBuy()">Cost: <img alt="gold" src="https://pseudonian.github.io/SynergismOfficial/Pictures/Coin.png"> 10</button>
+        </div>
+    </div>
+    <div style="height: 175px">
+        <div class="col-sm-4 bordered">
+            <p>Upgrade Steroids (lol2)</p>
+            <p>Atk Increase (Up to 200%)</p>
+            <p id="atkIncrease">0% => 2%</p>
+            <button id="weaponBuy2" class="btn btn-danger" onclick="weaponBuy2()">Cost: <img alt="gold" src="https://pseudonian.github.io/SynergismOfficial/Pictures/Coin.png"> 20</button>
+        </div>
+        <div class="col-sm-4 bordered">
+            <p>Upgrade Armor</p>
+            <p>HP Increase (Up to 200%)</p>
+            <p id="HPIncrease">0% => 2%</p>
+            <button id="HPBuy2" class="btn btn-danger" onclick="HPBuy2()">Cost: <img alt="gold" src="https://pseudonian.github.io/SynergismOfficial/Pictures/Coin.png"> 20</button>
+        </div>
+        <div class="col-sm-4 bordered">
+            <p>Increase World Level</p>
+            <p style="font-size: 10px">(increased<span style="font-size: 14px">&nbsp;</span>coin rate but you encounter higher level enemies)</p>
+            <p id="WLIncrease">1 => 2</p>
+            <button id="WLBuy" class="btn btn-danger" onclick="WLBuy()">Cost: <img alt="gold" src="https://pseudonian.github.io/SynergismOfficial/Pictures/Coin.png"> 10</button>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
