@@ -1,0 +1,65 @@
+/*
+
+Spaghetti code warning 2 electric boogaloo
+
+ */
+body{
+    font-family: Montserrat, serif;
+}
+#battle{
+    border-radius: 10px;
+    border: 1px solid black;
+    width: 75%;
+    margin: 10px auto 0;
+}
+#enemyName{
+    text-align: center;
+    margin-top: 10px;
+}
+#enemyLvl{
+    text-align: center;
+}
+.healthBG{
+    background-color: black;
+    padding: 5px;
+    margin: 10px;
+}
+.health{
+    background-color: red;
+    margin: 0;
+}
+.timeBG{
+    background-color: black;
+    padding: 5px;
+    margin: 10px;
+}
+.time{
+    background-color: cornflowerblue;
+    margin: 0;
+    height: 5px;
+    width: 0;
+}
+#contextActions{
+    text-align: center;
+    margin-bottom: 10px;
+}
+#resources{
+    border-radius: 10px;
+    border: 1px solid black;
+    width: 75%;
+    margin: 10px auto 0;
+    padding: 10px;
+}
+#upgrades{
+    border-radius: 10px;
+    border: 1px solid black;
+    width: 87.5%;
+    margin: 10px auto 0;
+    padding: 10px;
+}
+.bordered{
+    border-radius: 10px;
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
